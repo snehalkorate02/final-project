@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Speech Recognition</title>
+    <script src="app.js"></script>
+    <style>
+        /* Optional basic CSS for better appearance */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f9;
+        }
+        #recognition-output {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+            background-color: white;
+            white-space: pre-wrap; /* Keeps formatting */
+            text-align: left;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎙️ Simple Speech Recognition</h1>
+
+    <p>Click the button and start speaking. The recognized text will appear below.</p>
+
+    <button id="start-btn">Start Listening</button>
+
+    <div id="recognition-output">
+        Start speaking after you click the button and grant microphone access.
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
